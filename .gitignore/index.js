@@ -42,6 +42,14 @@ bot.on('message', message => {
     }
 });
 
+
+bot.on('message', message => {
+    if (message.content === "rageux"){
+        message.reply("/tableflip");
+        console.log('regeux utilisé');
+    }
+});
+
 bot.on('message', message => {
     if (message.content === "/ban"){
         message.reply("** Désoler je veux bien tester mais ma lance n'atteins pas encore le ban **");
