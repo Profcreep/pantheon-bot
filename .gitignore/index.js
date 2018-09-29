@@ -45,7 +45,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === "rageux"){
-        message.reply("/tableflip");
+        message.reply("**/tableflip**");
         console.log('regeux utilisé');
     }
 });
