@@ -45,7 +45,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === "rageux"){
-        message.reply(` $/tableflip `);
+        message.reply(' $/tableflip ');
         console.log('regeux utilisé');
     }
 });
@@ -59,7 +59,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === "antoine"){
-      message.reply(`à raison $@Antoine est un Kappa !! :Kappa:  `);
+      message.reply('à raison $@Antoine est un Kappa !! :Kappa:');
       console.log('antoine à été utiliser');
   }
 });
