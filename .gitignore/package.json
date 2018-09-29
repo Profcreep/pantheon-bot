@@ -1,0 +1,14 @@
+{
+    "name": "pantheon-bot",
+    "version": "0.0.2",
+    "description": "Bot fait par amour",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Profcreep",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^11.2.1"
+    }
+}
