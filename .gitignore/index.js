@@ -23,7 +23,7 @@ bot.on("message", msg => {
 
       // Command /help
      if (msg.content.startsWith(Prefix + "help")) {
-      msg.author.send("```Liste des commandes : \n\n /version  | Version du bot \n /help | Toute les commandes \n /boulanger | Phrase de Panthéon \n /ban | Bannir des gens mais pour l'instant pour la déco \n /cancer | seulement pour l'administration !!! \n .kick | pour kicker les gens bande d'illetrer \n .ban | comme sont nom l'indique il ban les gens gros con  ```");
+      msg.author.send("```Liste des commandes : \n\n /version  | Version du bot \n /help | Toute les commandes \n .kick | pour kicker les gens bande d'illetrer \n .ban | comme sont nom l'indique il ban les gens gros con \n /boulanger | Panthéon vous sort sa phrase favorite ```");
       console.log("Command executed: /help")
     }
     // Command /version
