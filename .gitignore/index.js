@@ -42,26 +42,11 @@ bot.on('message', message => {
     }
 });
 
-
-bot.on('message', message => {
-    if (message.content === "rageux"){
-        message.reply(' $/tableflip ');
-        console.log('regeux utilisé');
-    }
-});
-
 bot.on('message', message => {
     if (message.content === "/ban"){
         message.reply("** Désoler je veux bien tester mais ma lance n'atteins pas encore le ban **");
         console.log('ban');
     }
-});
-
-bot.on('message', message => {
-  if (message.content === "antoine"){
-      message.reply('à raison $@Antoine est un Kappa !! :Kappa:');
-      console.log('antoine à été utiliser');
-  }
 });
 
 bot.on('message', message => {
