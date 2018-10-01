@@ -37,7 +37,7 @@ bot.on("message", msg => {
 
 bot.on('message', message => {
     if (message.content === "/boulanger"){
-        message.reply("** Mon métier enfaite j'ai toujours voulu devenir boulanger !**");
+        message.channel.send("** Mon métier enfaite j'ai toujours voulu devenir boulanger !**");
         console.log('pantheon');
     }
 });
@@ -51,7 +51,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === "octopussy"){
-      message.reply("OMG un BRYAN sauvage apparaît (YAAAAAAAA)");
+     message.channel.send("OMG un BRYAN sauvage apparaît (YAAAAAAAA)");
       console.log('Octopussy');
   }
 });
@@ -79,7 +79,7 @@ bot.on('message', message => {
       return message.reply("Tu n'as pas la Permission de Kicker les Joueurs ....").catch(console.error);
     }
     kickMember.kick().then(member => {
-      message.reply(`${member.user.username} a été expluser avec succès https://i.makeagif.com/media/5-17-2015/8mrPwo.gif`).catch(console.error);
+      message.channel.send(`${member.user.username} a été expluser avec succès https://i.makeagif.com/media/5-17-2015/8mrPwo.gif`).catch(console.error);
     message.guild.channels.find("name", "discution-temporaire").send(`**${member.username} a été expluser par **${message.authpr.username}https://i.makeagif.com/media/5-17-2015/8mrPwo.gif**`)
     }).catch(console.error)
   
@@ -92,9 +92,16 @@ bot.on('message', message => {
   const member = message.mentions.members.first();
   if (!member) message.author.send("merci de mentionner l'utilisateur BAKA!!!");
   member.ban().then(member => {
-    message.reply(`${member.user.username} à été ban avec brio !!! http://pa1.narvii.com/5783/9eba64b8fa3e198db2e124c223b038b468299120_00.gif`).catch(console.error);
+   message.channel.send(`${member.user.username} à été ban avec brio !!! http://pa1.narvii.com/5783/9eba64b8fa3e198db2e124c223b038b468299120_00.gif`).catch(console.error);
     message.guild.channel.find("name", "discution-temporaire").send(`**${member.user.username}** a fait un 1vs1 avec **${message.author.username}**http://pa1.narvii.com/5783/9eba64b8fa3e198db2e124c223b038b468299120_00.gif`)
   }).catch(console.error);
 }})
 
+
+bot.on('message', message => {
+  if (message.content === "__Narrateur:__ *qui s'ent sortira entre <@496348637153198100> et <@495345254971736096> ?* https://i.ebayimg.com/images/g/VQUAAOSwVL1WCSJR/s-l300.jpg"){
+    message.channel.send("Ta gueule le __Narrateur__ !!!!!");
+      console.log('Panthéon Violent');
+  }
+});
 
